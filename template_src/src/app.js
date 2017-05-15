@@ -36,7 +36,7 @@ new Vue({
   framework7: {
     root: '#app',
     /* Uncomment to enable Material theme: */
-    // material: true,
+    material: true,
     routes: Routes
   },
   // Register App Component

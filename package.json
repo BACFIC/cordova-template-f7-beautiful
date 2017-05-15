@@ -23,5 +23,9 @@
     "vue"
   ],
   "author": "Oguz Ozcan",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "action-comment": "0.0.4",
+    "vue-style-loader": "^3.0.1"
+  }
 }
