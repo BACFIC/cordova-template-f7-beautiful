@@ -50,7 +50,7 @@ This template need cordova or phonegap, for more information [cordova installati
 Our Magic words:
 
 ``` bash
-cordova create myapp com.iam.myapp MyApp --template cordova-template-framework7-vue-webpack
+cordova create myapp com.iam.myapp MyApp --template cordova-template-f7-beautiful
 ```
 
 ## Usage
