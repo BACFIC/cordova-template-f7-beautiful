@@ -58,6 +58,19 @@ cordova create myapp com.iam.myapp MyApp --template cordova-template-f7-beautifu
 You can use every cordova | phonegap commands.
 You just have one more command option: `-- --lr`. It starts live reload.
 
+### --env.
+An alias is also available for --env. Being:
+If you want to pass app and pay as environment variable use --env --app myApp --page home
+
+In traditional webpack2 format you would do so:
+`--env.app myApp --env.page home //don't work here`
+
+In addition, it is possible to pass using `--wp.`:
+`--wp.env.app myApp --wp.env.page home`
+
+52/5000
+Você quis dizer: No formato tradicional do webpack 2 você faria assim:
+In traditional webpack2 format you would do so:
 Example usage:
 ```
 cordova run android -- --lr
@@ -65,7 +78,9 @@ cordova run browser -- --live-reload
 phonegap run ios -- --lr
 ```
 
-And :tada: that's all folks!
+
+# Set of webpack banners
+To define the tags that will be executed in the web pack use the prefix `--wp.`, Example: `--wp.env.app myApp`
 
 You can check:
 * [hookers.js](template_src/hooks/hookers.js),
