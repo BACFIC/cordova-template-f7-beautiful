@@ -40,7 +40,7 @@ let config = function (env) {
 
     module: {
       rules: [
-        {test: /\.(js|vue|stylus|pug)$/, loader: 'action-comment-loader', 'options': { 'handles': require("./acHandles.js") } },
+        {test: /\.(js|vue|stylus|pug)$/, loader: 'action-comment-loader', 'options': { 'handles': require("./acHandles.js")(env) } },
         {test: /\.(png|jpe?g|gif)$/, loader: 'file-loader', options: {name: '[name].[ext]?[hash]'}},
         {test: /\.(woff2?|eot|ttf|otf|mp3|wav)(\?.*)?$/, loader: 'file-loader', options: {name: '[name].[ext]?[hash]'}},
         {test: /\.svg$/, loader: 'url-loader'},
